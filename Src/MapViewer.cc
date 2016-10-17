@@ -3,7 +3,9 @@
 #include "KeyFrame.h"
 #include "LevelHelpers.h"
 #include <iomanip>
-
+#ifdef __APPLE__
+    #define _OSX
+#endif
 #include <cvd/gl_helpers.h>
 
 using namespace CVD;

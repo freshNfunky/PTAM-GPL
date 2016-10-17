@@ -7,9 +7,13 @@
 #include <GL/glext.h>
 #endif
 
-#ifdef _OSX
-#include <OpenGL/gl.h>
-#include <OpenGL/glext.h>
+#ifdef __APPLE__
+    #ifndef _OSX
+        #define _OSX
+    #endif
+
+    #include <OpenGL/gl.h>
+    #include <OpenGL/glext.h>
 #endif
 
 #ifdef WIN32

@@ -3,10 +3,13 @@
 #include "SmallMatrixOpts.h"
 #include "KeyFrame.h"
 
+#define CVD_HAVE_TOON
+#include <TooN/Cholesky.h>
 #include <cvd/vision.h>
 #include <cvd/vector_image_ref.h>
 #include <cvd/image_interpolate.h>
-#include <TooN/Cholesky.h>
+#include <cvd/image_convert.h>
+
 // tmmintrin.h contains SSE3<> instrinsics, used for the ZMSSD search at the bottom..
 // If this causes problems, just do #define CVD_HAVE_XMMINTRIN 0
 #if CVD_HAVE_XMMINTRIN
@@ -107,7 +110,7 @@ void PatchFinder::MakeTemplateCoarseCont(MapPoint &p)
     {
       int nOutside;  // Use CVD::transform to warp the patch according the the warping matrix m2
                      // This returns the number of pixels outside the source image hit, which should be zero.
-      nOutside = CVD::transform(p.pPatchSourceKF->aLevels[p.nSourceLevel].im, 
+      nOutside = CVD::transform(p.pPatchSourceKF->aLevels[p.nSourceLevel].im,
 				mimTemplate, 
 				m2,
 				vec(p.irCenter),
@@ -140,7 +143,10 @@ void PatchFinder::MakeTemplateCoarseNoWarp(KeyFrame &k, int nLevel, ImageRef irL
       return;
     }
   mbTemplateBad = false;
-  copy(im,
+
+    //convert_image(im, mimTemplate);
+    
+    copy(im,
        mimTemplate,
        mimTemplate.size(),
        irLevelPos - mirCenter);

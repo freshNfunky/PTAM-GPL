@@ -12,6 +12,7 @@
 #define __MINI_PATCH_H
 
 #include <cvd/image.h>
+#include <cvd/image_convert.h>
 #include <cvd/byte.h>
 #include <cvd/utility.h>
 #include <TooN/TooN.h>

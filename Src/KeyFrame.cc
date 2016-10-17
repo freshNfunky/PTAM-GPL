@@ -4,6 +4,7 @@
 #include "SmallBlurryImage.h"
 #include <cvd/vision.h>
 #include <cvd/fast_corner.h>
+#include <cvd/image_convert.h>
 
 using namespace CVD;
 using namespace std;
@@ -18,7 +19,7 @@ void KeyFrame::MakeKeyFrame_Lite(BasicImage<byte> &im)
   
   // First, copy out the image data to the pyramid's zero level.
   aLevels[0].im.resize(im.size());
-  copy(im, aLevels[0].im);
+    copy(im, aLevels[0].im);
 
   // Then, for each level...
   for(int i=0; i<LEVELS; i++)
