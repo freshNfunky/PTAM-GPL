@@ -1,3 +1,7 @@
+#ifndef CVD_HAVE_TOON
+    #define CVD_HAVE_TOON
+#endif
+
 #include "MapViewer.h"
 #include "MapPoint.h"
 #include "KeyFrame.h"
@@ -29,9 +33,12 @@ void MapViewer::DrawMapDots()
   glPointSize(3);
   glBegin(GL_POINTS);
   mv3MassCenter = Zeros;
-  for(size_t i=0; i<mMap.vpPoints.size(); i++)
+    
+  Vector<3> v3Pos;
+  
+    for(size_t i=0; i<mMap.vpPoints.size(); i++)
     {
-      Vector<3> v3Pos = mMap.vpPoints[i]->v3WorldPos;
+      v3Pos = mMap.vpPoints[i]->v3WorldPos;
       glColor(gavLevelColors[mMap.vpPoints[i]->nSourceLevel]);
       if(v3Pos * v3Pos < 10000)
 	{

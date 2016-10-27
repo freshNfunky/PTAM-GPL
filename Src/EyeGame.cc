@@ -1,7 +1,12 @@
 // Copyright 2008 Isis Innovation Limited
+#ifndef CVD_HAVE_TOON
+    #define CVD_HAVE_TOON
+#endif
+
 #include "EyeGame.h"
-#include "OpenGL.h"
+//#include "OpenGL.h"
 #include <cvd/convolution.h>
+#include <cvd/gl_helpers.h>
 
 using namespace CVD;
 

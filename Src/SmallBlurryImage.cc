@@ -1,11 +1,13 @@
 // Copyright 2008 Isis Innovation Limited
+#define CVD_HAVE_TOON 1
+#include <TooN/se2.h>
+#include <TooN/Cholesky.h>
+#include <TooN/wls.h>
 #include "SmallBlurryImage.h"
 #include <cvd/utility.h>
 #include <cvd/convolution.h>
 #include <cvd/vision.h>
-#include <TooN/se2.h>
-#include <TooN/Cholesky.h>
-#include <TooN/wls.h>
+
 
 using namespace CVD;
 using namespace std;

@@ -21,6 +21,11 @@
 #ifndef __TRACKER_H
 #define __TRACKER_H
 
+#ifndef CVD_HAVE_TOON
+    #define CVD_HAVE_TOON
+#endif
+#include <cvd/gl_helpers.h>
+
 #include "MapMaker.h"
 #include "ATANCamera.h"
 #include "MiniPatch.h"

@@ -10,6 +10,8 @@
 #ifndef __EYEGAME_H
 #define __EYEGAME_H
 #include <TooN/TooN.h>
+#include <TooN/se3.h>
+
 using namespace TooN;
 #include "OpenGL.h"
 

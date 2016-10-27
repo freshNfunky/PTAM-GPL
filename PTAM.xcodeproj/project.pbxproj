@@ -27,8 +27,6 @@
 		1E0ABAD31D99BBBD006D62B1 /* VideoSource_OSX.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABABA1D99BBBD006D62B1 /* VideoSource_OSX.cc */; };
 		1E0ABADD1D99C53C006D62B1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0ABADC1D99C53C006D62B1 /* OpenGL.framework */; };
 		1E0ABADF1D99C64D006D62B1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0ABADE1D99C64D006D62B1 /* Accelerate.framework */; };
-		1E489EAB1DAD9A20002CCC17 /* libcvd-0.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EAA1DAD9A20002CCC17 /* libcvd-0.8.dylib */; };
-		1E489EAD1DB4271D002CCC17 /* libGVars3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EAC1DB4271D002CCC17 /* libGVars3.a */; };
 		1E489EB91DB5524D002CCC17 /* CameraCalibrator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA8B1D99BBBD006D62B1 /* CameraCalibrator.cc */; };
 		1E489EBA1DB5524D002CCC17 /* VideoSource_OSX.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABABA1D99BBBD006D62B1 /* VideoSource_OSX.cc */; };
 		1E489EC81DB5524D002CCC17 /* libGVars3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EAC1DB4271D002CCC17 /* libGVars3.a */; };
@@ -41,6 +39,10 @@
 		1E489ED41DB5537D002CCC17 /* CalibImage.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA881D99BBBD006D62B1 /* CalibImage.cc */; };
 		1E489ED51DB55395002CCC17 /* CalibCornerPatch.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA861D99BBBD006D62B1 /* CalibCornerPatch.cc */; };
 		1E489ED61DB5539B002CCC17 /* ATANCamera.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA811D99BBBD006D62B1 /* ATANCamera.cc */; };
+		1E489EE21DB8108D002CCC17 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EE11DB8108D002CCC17 /* libc++.tbd */; };
+		1E489EE51DB8126F002CCC17 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EDF1DB81071002CCC17 /* libstdc++.6.tbd */; };
+		1E79E6D11DB8396500D5BC2A /* ARDriver.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA7F1D99BBBD006D62B1 /* ARDriver.cc */; };
+		1E79E6D21DB8398D00D5BC2A /* EyeGame.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA8E1D99BBBD006D62B1 /* EyeGame.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -132,6 +134,9 @@
 		1E489EAA1DAD9A20002CCC17 /* libcvd-0.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libcvd-0.8.dylib"; path = "../../../../usr/local/lib/libcvd-0.8.dylib"; sourceTree = "<group>"; };
 		1E489EAC1DB4271D002CCC17 /* libGVars3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGVars3.a; path = ../../../../usr/local/lib/libGVars3.a; sourceTree = "<group>"; };
 		1E489ED01DB5524D002CCC17 /* CameraCalibrator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CameraCalibrator; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E489EDD1DB80B05002CCC17 /* libcvd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcvd.a; path = ../../../../usr/local/lib/libcvd.a; sourceTree = "<group>"; };
+		1E489EDF1DB81071002CCC17 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		1E489EE11DB8108D002CCC17 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E489EAD1DB4271D002CCC17 /* libGVars3.a in Frameworks */,
-				1E489EAB1DAD9A20002CCC17 /* libcvd-0.8.dylib in Frameworks */,
+				1E489EE51DB8126F002CCC17 /* libstdc++.6.tbd in Frameworks */,
 				1E0ABADF1D99C64D006D62B1 /* Accelerate.framework in Frameworks */,
 				1E0ABADD1D99C53C006D62B1 /* OpenGL.framework in Frameworks */,
 			);
@@ -150,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E489EE21DB8108D002CCC17 /* libc++.tbd in Frameworks */,
 				1E489EC81DB5524D002CCC17 /* libGVars3.a in Frameworks */,
 				1E489EC91DB5524D002CCC17 /* libcvd-0.8.dylib in Frameworks */,
 				1E489ECA1DB5524D002CCC17 /* Accelerate.framework in Frameworks */,
@@ -249,6 +254,9 @@
 		1E0ABADB1D99C53C006D62B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E489EE11DB8108D002CCC17 /* libc++.tbd */,
+				1E489EDF1DB81071002CCC17 /* libstdc++.6.tbd */,
+				1E489EDD1DB80B05002CCC17 /* libcvd.a */,
 				1E489EAC1DB4271D002CCC17 /* libGVars3.a */,
 				1E489EAA1DAD9A20002CCC17 /* libcvd-0.8.dylib */,
 				1E0ABADE1D99C64D006D62B1 /* Accelerate.framework */,
@@ -342,6 +350,7 @@
 				1E0ABACE1D99BBBD006D62B1 /* ShiTomasi.cc in Sources */,
 				1E0ABABD1D99BBBD006D62B1 /* Bundle.cc in Sources */,
 				1E0ABAC91D99BBBD006D62B1 /* MapPoint.cc in Sources */,
+				1E79E6D21DB8398D00D5BC2A /* EyeGame.cc in Sources */,
 				1E0ABAD31D99BBBD006D62B1 /* VideoSource_OSX.cc in Sources */,
 				1E0ABAC51D99BBBD006D62B1 /* KeyFrame.cc in Sources */,
 				1E0ABABC1D99BBBD006D62B1 /* ATANCamera.cc in Sources */,
@@ -350,6 +359,7 @@
 				1E0ABAC41D99BBBD006D62B1 /* HomographyInit.cc in Sources */,
 				1E0ABAC31D99BBBD006D62B1 /* GLWindowMenu.cc in Sources */,
 				1E0ABACD1D99BBBD006D62B1 /* Relocaliser.cc in Sources */,
+				1E79E6D11DB8396500D5BC2A /* ARDriver.cc in Sources */,
 				1E0ABAD11D99BBBD006D62B1 /* Tracker.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,9 +385,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -397,7 +407,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -405,16 +415,36 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_VERSION = 6.1;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk,
+					/usr/local/include,
+					../..,
+					..,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				OTHER_LDFLAGS = (
+					"-std=c++11",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Accelerate,
+					"-L/usr/local/lib/",
+					"-lGVars3",
+					"-lcvd",
+				);
+				SDKROOT = macosx10.11;
 			};
 			name = Debug;
 		};
@@ -422,9 +452,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -444,25 +474,45 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = 6.1;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk,
+					/usr/local/include,
+					../..,
+					..,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				OTHER_LDFLAGS = (
+					"-std=c++11",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Accelerate,
+					"-L/usr/local/lib/",
+					"-lGVars3",
+					"-lcvd",
+				);
+				SDKROOT = macosx10.11;
 			};
 			name = Release;
 		};
 		1E0ABA2C1D99B8EB006D62B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				GCC_VERSION = 6.1;
+				CLANG_ENABLE_MODULES = NO;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk,
 					/usr/local/include,
@@ -482,8 +532,8 @@
 		1E0ABA2D1D99B8EB006D62B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LIBRARY = "libc++";
-				GCC_VERSION = 6.1;
+				CLANG_ENABLE_MODULES = NO;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk,
 					/usr/local/include,

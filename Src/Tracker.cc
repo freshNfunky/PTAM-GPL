@@ -1,5 +1,5 @@
 // Copyright 2008 Isis Innovation Limited
-#include "OpenGL.h"
+//#include "OpenGL.h"
 #include "Tracker.h"
 #include "MEstimator.h"
 #include "ShiTomasi.h"
