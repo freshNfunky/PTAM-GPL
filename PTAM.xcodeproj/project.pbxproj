@@ -29,7 +29,6 @@
 		1E0ABADF1D99C64D006D62B1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0ABADE1D99C64D006D62B1 /* Accelerate.framework */; };
 		1E489EB91DB5524D002CCC17 /* CameraCalibrator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA8B1D99BBBD006D62B1 /* CameraCalibrator.cc */; };
 		1E489EBA1DB5524D002CCC17 /* VideoSource_OSX.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABABA1D99BBBD006D62B1 /* VideoSource_OSX.cc */; };
-		1E489EC81DB5524D002CCC17 /* libGVars3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EAC1DB4271D002CCC17 /* libGVars3.a */; };
 		1E489EC91DB5524D002CCC17 /* libcvd-0.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EAA1DAD9A20002CCC17 /* libcvd-0.8.dylib */; };
 		1E489ECA1DB5524D002CCC17 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0ABADE1D99C64D006D62B1 /* Accelerate.framework */; };
 		1E489ECB1DB5524D002CCC17 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0ABADC1D99C53C006D62B1 /* OpenGL.framework */; };
@@ -41,6 +40,8 @@
 		1E489ED61DB5539B002CCC17 /* ATANCamera.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA811D99BBBD006D62B1 /* ATANCamera.cc */; };
 		1E489EE21DB8108D002CCC17 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EE11DB8108D002CCC17 /* libc++.tbd */; };
 		1E489EE51DB8126F002CCC17 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E489EDF1DB81071002CCC17 /* libstdc++.6.tbd */; };
+		1E72B5E01DCBF731002B745B /* libGVars3_headless_i386-0.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E72B5DF1DCBF731002B745B /* libGVars3_headless_i386-0.6.dylib */; };
+		1E72B5E31DCC0388002B745B /* libcvd_i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E72B5E21DCC0388002B745B /* libcvd_i386.a */; };
 		1E79E6D11DB8396500D5BC2A /* ARDriver.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA7F1D99BBBD006D62B1 /* ARDriver.cc */; };
 		1E79E6D21DB8398D00D5BC2A /* EyeGame.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1E0ABA8E1D99BBBD006D62B1 /* EyeGame.cc */; };
 /* End PBXBuildFile section */
@@ -137,6 +138,9 @@
 		1E489EDD1DB80B05002CCC17 /* libcvd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcvd.a; path = ../../../../usr/local/lib/libcvd.a; sourceTree = "<group>"; };
 		1E489EDF1DB81071002CCC17 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		1E489EE11DB8108D002CCC17 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1E72B5DD1DCBF515002B745B /* libGVars3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGVars3.a; path = ../gvars/libGVars3.a; sourceTree = "<group>"; };
+		1E72B5DF1DCBF731002B745B /* libGVars3_headless_i386-0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libGVars3_headless_i386-0.6.dylib"; path = "../../../../usr/local/lib/libGVars3_headless_i386-0.6.dylib"; sourceTree = "<group>"; };
+		1E72B5E21DCC0388002B745B /* libcvd_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcvd_i386.a; path = ../../../../usr/local/lib/libcvd_i386.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +148,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E489EE51DB8126F002CCC17 /* libstdc++.6.tbd in Frameworks */,
+				1E72B5E31DCC0388002B745B /* libcvd_i386.a in Frameworks */,
 				1E0ABADF1D99C64D006D62B1 /* Accelerate.framework in Frameworks */,
+				1E72B5E01DCBF731002B745B /* libGVars3_headless_i386-0.6.dylib in Frameworks */,
+				1E489EE51DB8126F002CCC17 /* libstdc++.6.tbd in Frameworks */,
 				1E0ABADD1D99C53C006D62B1 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E489EE21DB8108D002CCC17 /* libc++.tbd in Frameworks */,
-				1E489EC81DB5524D002CCC17 /* libGVars3.a in Frameworks */,
 				1E489EC91DB5524D002CCC17 /* libcvd-0.8.dylib in Frameworks */,
 				1E489ECA1DB5524D002CCC17 /* Accelerate.framework in Frameworks */,
 				1E489ECB1DB5524D002CCC17 /* OpenGL.framework in Frameworks */,
@@ -254,6 +259,9 @@
 		1E0ABADB1D99C53C006D62B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E72B5E21DCC0388002B745B /* libcvd_i386.a */,
+				1E72B5DF1DCBF731002B745B /* libGVars3_headless_i386-0.6.dylib */,
+				1E72B5DD1DCBF515002B745B /* libGVars3.a */,
 				1E489EE11DB8108D002CCC17 /* libc++.tbd */,
 				1E489EDF1DB81071002CCC17 /* libstdc++.6.tbd */,
 				1E489EDD1DB80B05002CCC17 /* libcvd.a */,
@@ -441,8 +449,6 @@
 					"-framework",
 					Accelerate,
 					"-L/usr/local/lib/",
-					"-lGVars3",
-					"-lcvd",
 				);
 				SDKROOT = macosx10.11;
 			};
@@ -501,8 +507,6 @@
 					"-framework",
 					Accelerate,
 					"-L/usr/local/lib/",
-					"-lGVars3",
-					"-lcvd",
 				);
 				SDKROOT = macosx10.11;
 			};

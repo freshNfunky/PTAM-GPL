@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2E47396781516A1BB0549EB150A8760C4F116EBA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2E47396781516A1BB0549EB150A8760C4F116EBA" : 9223372036854775807,
+    "B6E69B25C70C9F5CE65C45B8B73727B3B4DE414A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0E8C333D-19E2-4F70-83A4-DD25046AD721",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2E47396781516A1BB0549EB150A8760C4F116EBA" : "PTAM-GPL\/",
+    "B6E69B25C70C9F5CE65C45B8B73727B3B4DE414A" : "gvars\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PTAM",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PTAM.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/freshNfunky\/PTAM-GPL.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2E47396781516A1BB0549EB150A8760C4F116EBA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/freshNfunky\/gvars.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B6E69B25C70C9F5CE65C45B8B73727B3B4DE414A"
+    }
+  ]
+}
